@@ -1,0 +1,796 @@
+/* General Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Replace with a specific Google Font if needed */
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* --- 1. HEADER STYLES --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px; /* Side padding */
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.logo{
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b88e2f; /* Golden color */
+}
+
+.nav-icons .icon {
+    font-size: 20px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+/* --- 2. HERO SECTION STYLES --- */
+.hero-section {
+    padding: 50px 80px;
+    background-color: #f4f5f7; /* Light grey background */
+}
+
+.hero-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* To position the text box */
+}
+
+.hero-image {
+    /* This div holds the large image */
+    width: 65%;
+    height: 500px; /* Set a fixed height */
+    /* *** REPLACE THIS URL WITH YOUR ACTUAL IMAGE PATH *** */
+    background: url('path/to/your/chair-and-plant-image.pg') no-repeat center center/cover; 
+    background-color: #d1d1d1; /* Placeholder */
+}
+
+.hero-text-box {
+    position: absolute; /* Relative to the container */
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    padding: 40px;
+    background-color: #fff3e3; /* Light beige/tan background for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-arrival-tag {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.hero-text-box h1 {
+    font-size: 45px;
+    color: #b88e2f; /* Golden color */
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.description {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.buy-now-btn {
+    background-color: #b88e2f; /* Golden color */
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.buy-now-btn:hover {
+    background-color: #a37c26;
+}
+
+/* --- 3. BROWSE THE RANGE STYLES --- */
+.range-section {
+    text-align: center;
+    padding: 80px 80px;
+}
+
+.range-section h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.range-section .subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.range-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.range-card {
+    flex: 1; /* Makes all cards equal width */
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 350px; /* Height for the image */
+    background-color: #eeeeee; /* Placeholder color */
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+/* Image placeholders set via CSS background */
+/* *** REPLACE THESE URLs WITH YOUR ACTUAL IMAGE PATHS *** */
+.dining-image {
+    background-image: url(images/dining.png);
+}
+.living-image {
+    background-image: url(images/living.png);
+}
+.bedroom-image {
+    background-image: url(images/driving.png);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* --- Our Products Section Styling --- */
+.our-products-section {
+    padding: 80px 0 100px; /* More padding at bottom for the button */
+    text-align: center;
+    background-color: #fff; /* White background for the section */
+}
+
+.products-header {
+    margin-bottom: 50px;
+}
+
+.products-title {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* --- Product Grid Container --- */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center cards horizontally */
+    gap: 30px; /* Space between product cards */
+    max-width: 1240px; /* Max width for the grid */
+    margin: 0 auto 50px; /* Center the grid and add space below */
+    padding: 0 20px;
+}
+
+/* --- Individual Product Card Styling --- */
+.product-card {
+    position: relative; /* For positioning badges and overlay */
+    width: 280px; /* Fixed width for each card */
+    background-color: #f4f5f7; /* Light grey background for cards */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Lift effect on hover */
+}
+
+.product-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Fixed height for image area */
+    overflow: hidden;
+    background-color: #d8d8d8; /* Placeholder background */
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the image area */
+    display: block;
+}
+
+/* --- Product Overlay (Hidden by default, shown on hover) --- */
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1; /* Show on product card hover */
+}
+
+.add-to-cart-btn {
+    background-color: #fff; /* White button */
+    color: #b88e2f; /* Primary color text */
+    font-size: 0.9em;
+    font-weight: 600;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #b88e2f; /* Primary color background */
+    color: #fff; /* White text */
+}
+
+.overlay-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.overlay-actions a {
+    color: #fff;
+    font-size: 0.85em;
+    transition: color 0.3s;
+}
+
+.overlay-actions a:hover {
+    color: #b88e2f; /* Primary color hover */
+}
+
+.overlay-actions i {
+    margin-right: 5px;
+}
+
+/* --- Product Info (Below image) --- */
+.product-info {
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-category {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.current-price {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333; /* Default price color */
+}
+
+.old-price {
+    font-size: 0.9em;
+    color: #b0b0b0; /* Lighter color for old price */
+    text-decoration: line-through; /* Strikethrough for old price */
+}
+
+/* --- Product Badges (New, Discount) --- */
+.product-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 48px; /* Fixed width for circular badge */
+    height: 48px; /* Fixed height for circular badge */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.product-badge.discount {
+    background-color: #e97171; /* Red for discount */
+}
+
+.product-badge.new {
+    background-color: #2ec1ac; /* Green for new */
+}
+
+/* --- Show More Button --- */
+.show-more-btn {
+    background-color: #fff;
+    border: 1px solid #b88e2f; /* Border with primary color */
+    color: #b88e2f;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 12px 50px;
+    cursor: pointer;
+    margin-top: 30px; /* Space above button */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.show-more-btn:hover {
+    background-color: #b88e2f;
+    color: #fff;
+}
+
+/* --- 4. INSPIRATION SECTION STYLES --- */
+.inspiration-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 80px;
+    background-color: #fcfcfc;
+    gap: 50px;
+}
+
+.inspiration-text {
+    width: 35%;
+    text-align: left;
+}
+
+.inspiration-text h2 {
+    font-size: 40px;
+    color: #333;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.inspiration-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    background-color: #b88e2f; /* Golden color */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.inspiration-gallery {
+    display: flex;
+    width: 65%;
+    gap: 20px;
+}
+
+.main-image {
+    position: relative;
+    width: 65%;
+    height: 450px;
+    /* *** REPLACE THIS URL WITH YOUR ACTUAL IMAGE PATH *** */
+    background: url(images/scroll.png) no-repeat center center/cover;
+    background-color: #e0e0e0; /* Placeholder */
+}
+
+.inner-peace-tag {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px 25px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.room-id {
+    font-size: 12px;
+    color: #666;
+}
+
+.room-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.arrow-btn {
+    background-color: #b88e2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    line-height: 20px; /* Center the arrow */
+}
+
+.side-image {
+    width: 35%;
+    height: 400px;
+    /* *** REPLACE THIS URL WITH YOUR ACTUAL IMAGE PATH *** */
+    background: url(images/books.png) no-repeat center center/cover;
+    background-color: #e0e0e0; /* Placeholder */
+    align-self: flex-end; /* Aligns it to the bottom */
+}
+
+/* --- 5. SHARE YOUR SETUP SECTION STYLES --- */
+.setup-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.setup-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.setup-header h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.setup-grid {
+    display: grid;
+    /* Creating the asymmetrical grid layout based on your image */
+    grid-template-columns: 0.9fr 0.9fr 1.2fr 1fr 1fr;
+    grid-template-rows: 200px 300px 200px; 
+    gap: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.share-setup-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: white; /* Or match surrounding background */
+}
+
+.share-intro {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.share-hashtag {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+/* --- Photo Gallery Grid Layout --- */
+.photo-gallery-grid {
+    display: grid;
+    /* Define 12 columns for fine-grained control, set implicit row height */
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)); /* Auto-fit rows, min 100px */
+    gap: 10px; /* Gap between images */
+    max-width: 1400px; /* Wider container for the full width gallery */
+    margin: 0 auto;
+    padding: 0 20px; /* Padding on the sides */
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Optional: slight rounded corners */
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Assigning grid positions based on the image */
+/* These values are determined by visually mapping the screenshot */
+
+/* Item 1 (Leftmost Tall) */
+.item-tall {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    height: 600px; /* Manually set height for precise visual match */
+}
+
+/* Item 2 (Office Desk) */
+.item-wide {
+    grid-column: 3 / span 4;
+    grid-row: 1 / span 1;
+    height: 295px; /* Manually set height for precise visual match */
+}
+
+/* Item 3 (Dining Room) */
+.item-medium {
+    grid-column: 7 / span 3;
+    grid-row: 1 / span 2;
+    height: 600px; /* Manually set height for precise visual match */
+}
+
+/* Item 4 (Bedroom Beige - Tall Right) */
+.item-tall-right {
+    grid-column: 10 / span 3;
+    grid-row: 1 / span 2;
+    height: 600px; /* Manually set height for precise visual match */
+}
+
+/* Item 5 (Gold Chair) */
+.item-chair {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    height: 295px; /* Manually set height for precise visual match */
+}
+
+/* Item 6 (Flowers Table - Small) */
+.item-small {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 1;
+    height: 295px; /* Manually set height for precise visual match */
+}
+
+/* Item 7 (Kitchen Shelf) */
+.item-kitchen-shelf {
+    grid-column: 5 / span 2;
+    grid-row: 2 / span 1;
+    height: 295px; /* Manually set height for precise visual match */
+}
+
+/* Item 8 (Small Frame) */
+.item-small-frame {
+    grid-column: 5 / span 2;
+    grid-row: 3 / span 1;
+    height: 295px; /* Manually set height for precise visual match */
+}
+
+/* Item 9 (Brick Dining) - This one seems to be behind the kitchen shelf and partially visible */
+/* For simplicity, if it's meant to be partially behind, its position needs careful consideration */
+/* Based on the screenshot, it looks like it might be positioned slightly off-grid or is just a sliver */
+/* For a direct visual match as a full item, this would be: */
+.item-brick-dining {
+    grid-column: 7 / span 3; /* Assuming it starts after item-kitchen-shelf if it's a new row */
+    grid-row: 3 / span 1;
+    height: 295px;
+}
+/* You need to adjust the grid spans and image URLs for items 8 & 9 based on your exact layout */
+
+
+/* --- 6. FOOTER STYLES --- */
+.footer {
+    padding-top: 50px;
+    border-top: 1px solid #d9d9d9;
+}
+
+.footer-primary {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px 50px 40px;
+}
+
+.footer-logo {
+    width: 25%;
+}
+
+.footer-logo p {
+    color: #9f9f9f;
+    font-size: 16px;
+    margin-top: 25px;
+    line-height: 1.5;
+}
+
+.footer-links, .footer-help {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.footer-links h4, .footer-help h4, .footer-newsletter h4 {
+    color: #9f9f9f;
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.footer-links a, .footer-help a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 25px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-help a:hover {
+    color: #b88e2f;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    width: fit-content;
+    padding-bottom: 5px;
+}
+
+/* ================================
+   MOBILE RESPONSIVE  (Max-width: 768px)
+==================================*/
+@media (max-width: 768px) {
+
+    /* ---- HEADER ---- */
+    .header {
+        padding: 15px 20px;
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: none; /* Mobile menu hide (optional) */
+    }
+
+    .nav-icons .icon {
+        margin-left: 10px;
+    }
+
+    .logo-text {
+        font-size: 22px;
+    }
+
+    /* ---- HERO SECTION ---- */
+    .hero-section {
+        padding: 20px;
+    }
+
+    .hero-content-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-text-box {
+        position: static;
+        transform: none;
+        width: 100%;
+        padding: 25px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .hero-text-box h1 {
+        font-size: 28px;
+    }
+
+    /* ---- RANGE SECTION ---- */
+    .range-cards-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .card-image {
+        height: 250px;
+    }
+
+    /* ---- PRODUCT GRID ---- */
+    .product-grid {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    /* ---- INSPIRATION SECTION ---- */
+    .inspiration-section {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .inspiration-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .inspiration-gallery {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-image,
+    .side-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* ---- SHARE SETUP SECTION ---- */
+    .photo-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item {
+        height: 150px !important;
+    }
+
+    /* ---- FOOTER ---- */
+    .footer-primary {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-logo,
+    .footer-links,
+    .footer-help,
+    .footer-newsletter {
+        width: 100%;
+    }
+
+    .newsletter-form {
+        margin: 0 auto;
+    }
+}
